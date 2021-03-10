@@ -1,33 +1,35 @@
 :root {
-  --dark: #000;
-  --course: #F4E408;
+  --darker: #16171a;
+  --dark: #26272b;
   --light: #fff;
 }
 body {
   background-color: var(--dark);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   color: var(--light);
   font-family: monospace;
   font-size: 1.5em;
   line-height: 1.5;
   margin: 0;
+  overflow-x: hidden;
 }
 main {
-  max-width: 50rem;
+  max-width: 75rem;
   margin: 10vh auto;
   padding: 0 2rem;
-
 }
 header {
-  background: var(--course);
-  color: var(--dark);
-  height: 30vh;
+  background: var(--darker);
+  color: var(--light);
+  height: 15vh;
+  padding-left: 5.5em;
+  padding-right: 5.5em;
+  border-bottom: solid 1px var(--light);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 h1 {
-  font-size: 8vw;
+  font-size: 4vw;
   letter-spacing: -0.04em;
 }
 h2 {
@@ -36,30 +38,70 @@ h2 {
 }
 ul {
   display: flex;
-  /flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
   margin: 0 -1rem;
 }
+
 ul li {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 1rem;
 }
+
+#usage li {
+  border: solid 1px var(--light);
+  background-color: var(--darker);
+  padding: 0.5em;
+}
+
+#coreItem li {
+  width: 45%;
+}
+
+#codeBlock li {
+  padding: 1em;
+  margin-bottom: 3em;
+  height: 100%;
+  background-color: var(--darker);
+  border: 1px solid var(--light);
+}
+
+#ifElseFormat {
+  padding-left: 1.2em;
+}
+
+#format {
+  padding-left: 1.5em;
+}
+
+#format2 {
+  padding-left: 2.5em;
+}
+
 ul img {
   border: 2px solid var(--light);
   margin-top: 2em;
   margin-bottom: 2em;
 }
 img {
-  max-width: 100%;
+  max-width: 25vw;
+  max-height: 25vw;
+  min-width: 20vw;
+  min-height: 20vw;
 }
 
+ul#usage {
+  width: 90%;
+}
 section#lecturers img {
   border-radius: 100%;
   margin-right: 1em;
+}
+section#references {
+  line-height: normal;
 }
 
 .button {
@@ -67,8 +109,7 @@ section#lecturers img {
   color: var(--dark);
   padding: 1em;
 }
-
-.examples img {
+A .examples img {
   max-width: 25vh;
 }
 
@@ -79,4 +120,5 @@ a:visited {
 
 footer {
   font-style: italic;
+  text-align: center;
 }
