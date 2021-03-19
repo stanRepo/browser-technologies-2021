@@ -4,5 +4,14 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+p {
+  color: blue;
+}
+form > fieldset {
+  display: flex;
+  flex-direction: row;
+  border: none;
 }

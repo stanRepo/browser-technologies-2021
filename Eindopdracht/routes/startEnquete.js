@@ -3,9 +3,9 @@ var router = express.Router();
 
 // Catch the form on POST request
 router.post("/", function (req, res, next) {
-  console.log(req.body);
+  console.log(req.body.firstName);
 
-  res.render("finished", {
+  res.render("enquete", {
     obj: req.body,
   });
 });
