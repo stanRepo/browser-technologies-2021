@@ -28,7 +28,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 ## Flowchart
 
-    ![Flowchart](./assets/flow.png)
+![Flowchart](./assets/flow.png)
 
 ## CheckList
 
