@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/backHome.ejs') %>
+    <h3>Enquete</h3>
+    <h1><%= obj.firstName%></h1>
+
+    <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">
+      <label for="course"><h4>Over welk vak wil je het hebben?</h4></label>
+      <br />
+      <select name="course" id="course">
+        <option value="Web App From Scratch">Web App From Scratch</option>
+        <option value="CSS To The Rescue">CSS To The Rescue</option>
+        <option value="Browser Technologies">Browser Technologies</option>
+        <option value="Progressive Web App">Progressive Web App</option>
+        <option value="Real Time Web">Real Time Web</option>
+        <option value="Web Design">Web Design</option>
+      </select>
+
+      <label for="when"> <h4>Wanneer begon je met dit vak?</h4> </label>
+      <fieldset>
+        <p>Begin Minor</p>
+        <input type="range" name="when" id="" min="0" max="13" />
+        <p>Einde Minor</p>
+      </fieldset>
+      <label for="profs"> <h4>Bij welke docent werd je ingedeeld?</h4></label>
+      <select name="profs" id="">
+        <option value="Joost">Joost</option>
+        <option value="Peter">Peter-Paul</option>
+        <option value="Koop">Koop</option>
+        <option value="Vasilis">Vasilis</option>
+      </select>
+
+      <h4>Baseer je volgende antwoorden op een schaal 1-10.</h4>
+
+      <label for="ratingCourse"><h4>Hoe beoordeel je de lesstof?</h4></label>
+      <fieldset>
+        <p>1</p>
+        <input type="range" name="ratingCourse" id="" min="1" max="10" />
+        <p>10</p>
+      </fieldset>
+      <label for="ratingExplanation"
+        ><h4>Hoe beoordeel je de uitleg van de lesstof?</h4>
+      </label>
+      <fieldset>
+        <p>1</p>
+        <input type="range" name="ratingExplanation" id="" min="1" max="10" />
+        <p>10</p>
+      </fieldset>
+
+      <label for="ratingUnderstanding"
+        ><h4>Hoe goed begrijp je de lesstof nu?</h4></label
+      >
+      <fieldset>
+        <p>1</p>
+        <input type="range" min="1" max="10" name="ratingUnderstanding" />
+        <p>10</p>
+      </fieldset>
+
+      <label for="comments"
+        ><h4>Is er iets wat je graag wilt vertellen?</h4></label
+      >
+      <textarea
+        form="enquete"
+        name="feedback"
+        id=""
+        cols="30"
+        rows="5"
+        placeholder="Schrijf hier je feedback voor dit vak."
+      ></textarea>
+      <!-- Previous form items to be send along hidden from view -->
+      <input type="text" value="<%= obj.firstName%>" name="firstName" hidden />
+      <input type="text" value="<%= obj.lastName%>" name="lastName" hidden />
+      <input
+        type="text"
+        value="<%= obj.studentNumber%>"
+        name="studentNumber"
+        hidden
+      />
+      <button type="submit">Versturen</button>
+    </form>
+  </body>
+</html>
