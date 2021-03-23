@@ -9,7 +9,7 @@
 Ik heb gekozen voor de enquete als use case.
 De enquete gaat over de minor Web Development van de Hogeschool van Amsterdam.
 
-De omschrijving is als volgt: _"Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven."_
+**Core Functionaliteit**: _"Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven."_
 
 ## Samenvatting
 
@@ -28,19 +28,41 @@ De verificatie van een user vindt plaats in de volgende stappen:
 - Server Side Rendering
 - Hidden Input Fields
 
-## Flowchart
+# Browsers
 
-![Flowchart](./assets/flow.png)
+#### De applicatie wordt getest in de volgende Browsers:
+
+- Chrome, Desktop + Mobiel **Versie 89.0.4389.82 (Officiële build) (64-bits)**
+- Firefox, Desktop **Versie 86.0.1 (64-bit)**
+- Safari Ipad **Versie 14.0**
+- Samsung Internet, Mobiel**Versie 13.2.3.2**
+
+# Wireflow
+
+![Wireflow](./assets/flow.png)
 
 ## CheckList
 
-### Real Time Feedback
+**Real Time Feedback**
 
-[ ] - Progress Bar "onScroll" [Browser Support](https://caniuse.com/?search=onScroll)
+[ ] - Progress Bar `"onScroll"` [Browser Support](https://caniuse.com/?search=onScroll)
 
-[X] - "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
+[X] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
-[ ] -
+**Ui enhancements**
+
+[ ] - Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range). `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
+
+[ ] Complete HTML
+
+[ ] Add CSS
+
+[ ] Add fallbacks for each browser
+
+- [ ] Chrome
+- [ ] Firefox
+- [ ] Safari
+- [ ] Samsung Internet
 
 # Lagen
 
