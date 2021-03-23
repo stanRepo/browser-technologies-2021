@@ -25,8 +25,10 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 - NodeJS
 - Express
+- POST request
 - Server Side Rendering
 - Hidden Input Fields
+- Progressive enhancement
 
 # Browsers
 
@@ -35,7 +37,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 - Chrome, Desktop + Mobiel **Versie 89.0.4389.82 (Officiële build) (64-bits)**
 - Firefox, Desktop **Versie 86.0.1 (64-bit)**
 - Safari Ipad **Versie 14.0**
-- Samsung Internet, Mobiel**Versie 13.2.3.2**
+- Samsung Internet, Mobiel **Versie 13.2.3.2**
 
 # Wireflow
 
