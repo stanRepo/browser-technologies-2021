@@ -2,26 +2,31 @@
 <html>
   <%- include('./partials/head.ejs') %>
   <body>
-    <%- include('./partials/backHome.ejs') %>
-    <h1><%= title %></h1>
-    <h2>Enquete Minor Web</h2>
+    <section>
+      <a href="/login"><button>Login</button></a>
+    </section>
 
-    <p>Voordat je begint met de enquete. Laat ons even weten wie je bent:</p>
+    <%- include('./partials/title.ejs') %>
 
-    <form action="/startEnquete" method="POST" autocomplete="on">
-      <legend>Vul het formulier naar eigen waarheid in. Bedankt Alvast</legend>
-      <label for="firstName">Voornaam</label>
-      <input type="text" name="firstName" />
+    <section>
+      <p>Voordat je begint met de enquete. Laat ons even weten wie je bent:</p>
+      <form action="/startEnquete" method="POST" autocomplete="on">
+        <legend>
+          Vul het formulier naar eigen waarheid in. Bedankt Alvast
+        </legend>
+        <label for="firstName">Voornaam</label>
+        <input type="text" name="firstName" />
 
-      <label for="lastName">Achternaam</label>
-      <input type="text" name="lastName" />
+        <label for="lastName">Achternaam</label>
+        <input type="text" name="lastName" />
 
-      <label for="studentNumber">Studentnummer</label>
-      <input type="number" name="studentNumber" />
-      <label for="birthday">Verjaardag</label>
-      <input type="date" name="dateOfBirth" />
+        <label for="studentNumber">Studentnummer</label>
+        <input type="number" name="studentNumber" />
+        <label for="birthday">Verjaardag</label>
+        <input type="date" name="dateOfBirth" />
 
-      <button type="submit">submit</button>
-    </form>
+        <button type="submit">submit</button>
+      </form>
+    </section>
   </body>
 </html>

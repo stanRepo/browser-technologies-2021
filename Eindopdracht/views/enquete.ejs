@@ -9,7 +9,7 @@
     <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">
       <label for="course"><h4>Over welk vak wil je het hebben?</h4></label>
       <br />
-      <select name="course" id="course">
+      <select name="course" id="course" required>
         <option value="Web App From Scratch">Web App From Scratch</option>
         <option value="CSS To The Rescue">CSS To The Rescue</option>
         <option value="Browser Technologies">Browser Technologies</option>
@@ -19,43 +19,136 @@
       </select>
 
       <label for="when"> <h4>Wanneer begon je met dit vak?</h4> </label>
-      <fieldset>
-        <p>Begin Minor</p>
-        <input type="range" name="when" id="" min="0" max="13" />
-        <p>Einde Minor</p>
-      </fieldset>
+
+        <input
+          type="week"
+          name="when"
+          
+          min="2021-W04"
+          max="2021-W40"
+          required
+        />
+     
       <label for="profs"> <h4>Bij welke docent werd je ingedeeld?</h4></label>
       <select name="profs" id="">
         <option value="Joost">Joost</option>
         <option value="Peter">Peter-Paul</option>
         <option value="Koop">Koop</option>
         <option value="Vasilis">Vasilis</option>
+        <option value="Vasilis">Sanne</option>
       </select>
 
       <h4>Baseer je volgende antwoorden op een schaal 1-10.</h4>
 
-      <label for="ratingCourse"><h4>Hoe beoordeel je de lesstof?</h4></label>
-      <fieldset>
-        <p>1</p>
+      <label for="ratingCourse" ><h4>Hoe beoordeel je de lesstof?</h4></label>
+     <fieldset>
+
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" required>
+          <p>1</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" required>
+          <p>2</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" required>
+          <p>3</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>4</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>5</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>6</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>7</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>8</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>9</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>10</p>
+        </input>
+        <!-- <p>1</p>
         <input type="range" name="ratingCourse" id="" min="1" max="10" />
-        <p>10</p>
+        <p>10</p> -->
       </fieldset>
       <label for="ratingExplanation"
         ><h4>Hoe beoordeel je de uitleg van de lesstof?</h4>
       </label>
       <fieldset>
-        <p>1</p>
-        <input type="range" name="ratingExplanation" id="" min="1" max="10" />
-        <p>10</p>
+     
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>1</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>2</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>3</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>4</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>5</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>6</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>7</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>8</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>9</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>10</p>
+        </input>
       </fieldset>
 
       <label for="ratingUnderstanding"
         ><h4>Hoe goed begrijp je de lesstof nu?</h4></label
       >
       <fieldset>
-        <p>1</p>
-        <input type="range" min="1" max="10" name="ratingUnderstanding" />
-        <p>10</p>
+     
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>1</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>2</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>3</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>4</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>5</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>6</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>7</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>8</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>9</p>
+        </input>
+        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox">
+          <p>10</p>
+        </input>
       </fieldset>
 
       <label for="comments"
@@ -72,6 +165,18 @@
       <!-- Previous form items to be send along hidden from view -->
       <input type="text" value="<%= obj.firstName%>" name="firstName" hidden />
       <input type="text" value="<%= obj.lastName%>" name="lastName" hidden />
+      <input
+        type="text"
+        value="<%= obj.studentNumber%>"
+        name="studentNumber"
+        hidden
+      />
+      <input
+        type="text"
+        value="<%= obj.dateOfBirth%>"
+        name="dateOfBirth"
+        hidden
+      />
       <input
         type="text"
         value="<%= obj.studentNumber%>"

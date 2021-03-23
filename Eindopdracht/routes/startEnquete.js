@@ -14,7 +14,9 @@ router.post("/", function (req, res, next) {
     // console.log(storedUser);
     if (
       storedUser.dateOfBirth === req.body.dateOfBirth &&
-      storedUser.studentNumber === req.body.studentNumber
+      storedUser.studentNumber === req.body.studentNumber &&
+      storedUser.firstName === req.body.firstName &&
+      storedUser.lastName === req.body.lastName
     ) {
       // user verified to access enquete
       this.bool = true;
