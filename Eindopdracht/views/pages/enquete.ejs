@@ -3,12 +3,15 @@
   <%- include('../partials/head.ejs') %>
   <body>
     <%- include('../partials/backHome.ejs') %>
-    <h3>Enquete</h3>
-    <h1><%= obj.firstName%></h1>
-
-    <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">
-      <label for="course"><h4>Over welk vak wil je het hebben?</h4></label>
-      <br />
+    <section>
+      <header>
+        <h3>Enquete</h3>
+      </header>
+      <h1><%= obj.firstName%></h1>
+      
+      <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">
+        <label for="course"><h4>Over welk vak wil je het hebben?</h4></label>
+        <br />
       <select name="course" id="course" required>
         <option value="" disabled selected>Kies een Vak</option>
         <option value="Web App From Scratch">Web App From Scratch</option>
@@ -18,18 +21,18 @@
         <option value="Real Time Web">Real Time Web</option>
         <option value="Web Design">Web Design</option>
       </select>
-
+      
       <label for="when"> <h4>Wanneer begon je met dit vak?</h4> </label>
-
-        <input
-          type="week"
-          name="when"
+      
+      <input
+      type="week"
+      name="when"
           
-          min="2021-W04"
-          max="2021-W40"
-          required
-        />
-     
+      min="2021-W04"
+      max="2021-W40"
+      required
+      />
+      
       <label for="profs"> <h4>Bij welke docent werd je ingedeeld?</h4></label>
       <select name="profs" id="">
         <option value="" disabled selected>Kies een docent</option>
@@ -39,155 +42,156 @@
         <option value="Vasilis">Vasilis</option>
         <option value="Vasilis">Sanne</option>
       </select>
-
+      
       <h4>Baseer je volgende antwoorden op een schaal 1-10.</h4>
-
+      
       <label for="ratingCourse" ><h4>Hoe beoordeel je de lesstof?</h4></label>
-     <fieldset>
-
+      <fieldset>
+        
         <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="1" required>
-          <p>1</p>
-        </input>
-        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="2" required>
-          <p>2</p>
-        </input>
-        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="3" required>
-          <p>3</p>
-        </input>
-        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="4"required>
-          <p>4</p>
-        </input>
+        <p>1</p>
+      </input>
+      <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="2" required>
+      <p>2</p>
+    </input>
+    <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="3" required>
+    <p>3</p>
+  </input>
+  <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="4"required>
+  <p>4</p>
+</input>
         <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="5"required>
-          <p>5</p>
-        </input>
-        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="6"required>
-          <p>6</p>
-        </input>
-        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="7"required>
-          <p>7</p>
-        </input>
-        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="8"required>
-          <p>8</p>
-        </input>
-        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="9"required>
-          <p>9</p>
-        </input>
-        <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="10"required>
-          <p>10</p>
-        </input>
-        <!-- <p>1</p>
-        <input type="range" name="ratingCourse" id="" min="1" max="10" />
-        <p>10</p> -->
-      </fieldset>
-      <label for="ratingExplanation"
-        ><h4>Hoe beoordeel je de uitleg van de lesstof?</h4>
-      </label>
-      <fieldset>
-     
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="1"required>
-          <p>1</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="2"required>
-          <p>2</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="3"required>
-          <p>3</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="4"required>
-          <p>4</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="5"required>
-          <p>5</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="6"required>
-          <p>6</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="7"required>
-          <p>7</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="8"required>
-          <p>8</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="9"required>
-          <p>9</p>
-        </input>
-        <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="10"required>
-          <p>10</p>
-        </input>
-      </fieldset>
+        <p>5</p>
+      </input>
+      <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="6"required>
+      <p>6</p>
+    </input>
+    <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="7"required>
+    <p>7</p>
+  </input>
+  <input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="8"required>
+  <p>8</p>
+</input>
+<input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="9"required>
+<p>9</p>
+</input>
+<input type="radio" name="ratingCourse" class="ratingCourseCheckbox"value="10"required>
+<p>10</p>
+</input>
+<!-- <p>1</p>
+  <input type="range" name="ratingCourse" id="" min="1" max="10" />
+  <p>10</p> -->
+</fieldset>
+<label for="ratingExplanation"
+><h4>Hoe beoordeel je de uitleg van de lesstof?</h4>
+</label>
+<fieldset>
+  
+  <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="1"required>
+  <p>1</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="2"required>
+<p>2</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="3"required>
+<p>3</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="4"required>
+<p>4</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="5"required>
+<p>5</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="6"required>
+<p>6</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="7"required>
+<p>7</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="8"required>
+<p>8</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="9"required>
+<p>9</p>
+</input>
+<input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="10"required>
+<p>10</p>
+</input>
+</fieldset>
 
-      <label for="ratingUnderstanding"
-        ><h4>Hoe goed begrijp je de lesstof nu?</h4></label
-      >
-      <fieldset>
-     
-        <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="1"required>
-          <p>1</p>
-        </input>
-        <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="2"required>
-          <p>2</p>
-        </input>
-        <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="3"required>
+<label for="ratingUnderstanding"
+><h4>Hoe goed begrijp je de lesstof nu?</h4></label
+>
+<fieldset>
+  
+  <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="1"required>
+  <p>1</p>
+</input>
+<input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="2"required>
+<p>2</p>
+</input>
+<input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="3"required>
           <p>3</p>
         </input>
         <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="4"required>
-          <p>4</p>
-        </input>
+        <p>4</p>
+      </input>
         <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="5"required>
-          <p>5</p>
-        </input>
+        <p>5</p>
+      </input>
         <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="6"required>
-          <p>6</p>
-        </input>
-        <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="7"required>
-          <p>7</p>
-        </input>
-        <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="8"required>
-          <p>8</p>
-        </input>
-        <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="9"required>
-          <p>9</p>
-        </input>
-        <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="10"required>
-          <p>10</p>
-        </input>
-      </fieldset>
+        <p>6</p>
+      </input>
+      <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="7"required>
+      <p>7</p>
+    </input>
+    <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="8"required>
+    <p>8</p>
+  </input>
+  <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="9"required>
+  <p>9</p>
+</input>
+<input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="10"required>
+<p>10</p>
+</input>
+</fieldset>
 
       <label for="comments"
-        ><h4>Is er iets wat je graag wilt vertellen?</h4></label
-      >
+      ><h4>Is er iets wat je graag wilt vertellen?</h4></label>
       <textarea
-        form="enquete"
-        name="feedback"
-        id=""
-        cols="30"
-        rows="5"
-        placeholder="Schrijf hier je feedback voor dit vak."
+      form="enquete"
+      name="feedback"
+      id=""
+      cols="30"
+      rows="5"
+      placeholder="Schrijf hier je feedback voor dit vak."
       ></textarea>
       <!-- Previous form items to be send along hidden from view -->
       <input type="text" value="<%= obj.firstName%>" name="firstName" hidden />
       <input type="text" value="<%= obj.lastName%>" name="lastName" hidden />
       <input
-        type="text"
-        value="<%= obj.studentNumber%>"
-        name="studentNumber"
+      type="text"
+      value="<%= obj.studentNumber%>"
+      name="studentNumber"
         hidden
-      />
-      <input
+        />
+        <input
         type="text"
         value="<%= obj.dateOfBirth%>"
         name="dateOfBirth"
         hidden
-      />
-     
-      <button type="submit">Versturen</button>
-    </form>
-
-    <section id="progressBarContainer">
-      <var id="progressBar">
-      </var>
-      </section>
-
-    <script src="./javascripts/main.js" type="module"></script>
-  </body>
-</html>
+        />
+        
+        <button type="submit">Versturen</button>
+      </form>
+    </section>
+      
+      <div id="progressBarContainer">
+        <var id="progressBar">
+        </var>
+      </div>
+      
+      <script src="./javascripts/main.js" type="module"></script>
+    </body>
+    </html>
+    
