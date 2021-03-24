@@ -2,7 +2,10 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+#restartForm > input {
+  position: absolute;
+  margin-left: -100vw;
+}
 a {
   color: #00b7ff;
 }

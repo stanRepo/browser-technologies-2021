@@ -8,10 +8,31 @@
     <%- include('./partials/backHome.ejs') %>
     <p>Enquete Minor Web</p>
     <h1>Bedankt voor je feedback <%= obj.firstName %></h1>
-    <h2>Wil je nog een vak beoordelen?</h2>
 
-    <a href="/startEnquete">
-      <p>Klik dan hier</p>
-    </a>
+    <section>
+      <h2>Wil je nog een vak beoordelen?</h2>
+      <form action="/startEnquete" method="POST" id="restartForm">
+        <input
+          type="text"
+          name="studentNumber"
+          value="<%=obj.studentNumber%>"
+          hidden
+        />
+        <input
+          type="text"
+          name="firstName"
+          value="<%= obj.firstName%>"
+          hidden
+        />
+        <input type="text" name="lastName" value="<%= obj.lastName%>" hidden />
+        <input
+          type="text"
+          name="dateOfBirth"
+          value="<%= obj.dateOfBirth%>"
+          hidden
+        />
+        <button type="submit">Klik hier</button>
+      </form>
+    </section>
   </body>
 </html>

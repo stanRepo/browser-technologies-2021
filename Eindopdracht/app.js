@@ -8,6 +8,8 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var enqueteRouterStart = require("./routes/startEnquete");
 var enqueteRouterSend = require("./routes/sendEnquete");
+var loginRouter = require("./routes/login");
+var loginAdminRouter = require("./routes/loginAdmin");
 
 var app = express();
 
@@ -26,6 +28,8 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/startEnquete", enqueteRouterStart);
 app.use("/sendEnquete", enqueteRouterSend);
+app.use("/login", loginRouter);
+app.use("/loginAdmin", loginAdminRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -40,7 +44,7 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render("unauthorized");
+  res.render("unauthorized", { obj: err.message });
 });
 
 module.exports = app;
