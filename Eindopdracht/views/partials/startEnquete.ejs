@@ -1,16 +1,16 @@
 <section>
+  <h2>Vul het formulier naar eigen waarheid in. Bedankt Alvast</h2>
   <form action="/startEnquete" method="POST" autocomplete="on">
-    <legend>Vul het formulier naar eigen waarheid in. Bedankt Alvast</legend>
     <label for="firstName">Voornaam</label>
-    <input type="text" name="firstName" />
+    <input type="text" name="firstName" id="firstName" />
 
     <label for="lastName">Achternaam</label>
-    <input type="text" name="lastName" />
+    <input type="text" name="lastName" id="lastName" />
 
     <label for="studentNumber">Studentnummer</label>
-    <input type="text" minlength="9" name="studentNumber" />
-    <label for="birthday">Verjaardag</label>
-    <input type="date" name="dateOfBirth" />
+    <input type="text" minlength="9" name="studentNumber" id="studentNumber" />
+    <label for="dateOfBirth">Verjaardag</label>
+    <input type="date" name="dateOfBirth" id="dateOfBirth" />
 
     <button type="submit">submit</button>
   </form>

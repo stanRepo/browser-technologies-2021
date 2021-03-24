@@ -10,7 +10,9 @@
     <h1>Bedankt voor je feedback <%= obj.firstName %></h1>
 
     <section>
-      <h2>Wil je nog een vak beoordelen?</h2>
+      <header>
+        <h2>Wil je nog een vak beoordelen?</h2>
+      </header>
       <form action="/startEnquete" method="POST" id="restartForm">
         <input
           type="text"
@@ -37,7 +39,9 @@
 
     <% if(previousEnquetes) { %>
     <section id="previousEnquetes">
-      <h2>Deze Enquetes heb je eerder naar ons gestuurd</h2>
+      <header>
+        <h2>Deze Enquetes heb je eerder naar ons gestuurd</h2>
+      </header>
       <% previousEnquetes.forEach(enquete=>{ %>
       <h3><%= enquete.courseName %></h3>
       <p id="date"><%= enquete.date%></p>
