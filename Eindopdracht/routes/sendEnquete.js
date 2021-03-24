@@ -11,7 +11,7 @@ data = JSON.parse(data);
 router.post("/", function (req, res, next) {
   console.log(req.body);
   data.forEach((storedUser) => {
-    //  loop through data
+    //  loop through users
     if (storedUser.studentNumber === req.body.studentNumber) {
       // find current user
       const answerObj = {

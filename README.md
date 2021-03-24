@@ -47,28 +47,28 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 **Real Time Feedback**
 
-[ ] - Progress Bar `"onScroll"` [Browser Support](https://caniuse.com/?search=onScroll)
+- [ ] Progress Bar `"onScroll"` [Browser Support](https://caniuse.com/?search=onScroll)
 
-[X] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
+- [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
 **Ui enhancements**
 
-[ ] - Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range).
+- [ ] Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range).
 
-- `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
+- - `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
 
-[ ] Complete HTML
+- [] Complete HTML
 
-[ ] Add CSS
+- [] Add CSS
 
-- CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
+- - CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
 
-[ ] Add fallbacks for each browser
+- [ ] Add fallbacks for each browser
 
-- [ ] Chrome
-- [ ] Firefox
-- [ ] Safari
-- [ ] Samsung Internet
+- - [ ] Chrome
+- - [ ] Firefox
+- - [ ] Safari
+- - [ ] Samsung Internet
 
 # Lagen
 

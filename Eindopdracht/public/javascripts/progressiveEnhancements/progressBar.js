@@ -10,7 +10,7 @@ export default function () {
 
   // give all input fields an event listener
   inputFields.forEach((input) => {
-    input.addEventListener("input", (e) => {
+    input.addEventListener("change", (e) => {
       console.log("lost focus");
       // if the value was previously empty
 
@@ -18,7 +18,7 @@ export default function () {
       if (e.target.value !== "") {
         console.log(count);
         // increase progressbar width
-        bar.style.width = count * 15 + "vw";
+        bar.style.width = count * 15 + "%";
         count++;
       }
     });

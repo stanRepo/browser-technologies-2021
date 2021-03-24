@@ -18,6 +18,6 @@ const activateFeatures = {
   },
 };
 
+activateFeatures.rangeElements();
 activateFeatures.progressBar();
 activateFeatures.localStorage();
-activateFeatures.rangeElements();

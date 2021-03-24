@@ -5,6 +5,7 @@ section#progressBarContainer {
   display: hidden;
   position: sticky;
   bottom: 0px;
+  max-width: 300px;
 }
 
 var#progressBar {
@@ -12,6 +13,8 @@ var#progressBar {
   height: 15px;
   background-color: green;
   position: absolute;
+  transition: 0.3s;
+  max-width: 300px;
 }
 section#progressBarContainer > p {
   color: white;
