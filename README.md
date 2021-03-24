@@ -13,14 +13,6 @@ De enquete gaat over de minor Web Development van de Hogeschool van Amsterdam.
 
 ## Samenvatting
 
-### Verificatie
-
-De verificatie van een user vindt plaats in de volgende stappen:
-
-1. Gebruiker vult basisgegevens in.
-2. Gegevens worden vergeleken met reeds bekende informatie op de server.
-3. Indien de gebruikersinput matched met de bekende gegevens gaat met door naar het enquete scherm. Indien de gebruikersinput niet matched met de bekende gegevens wordt de user doorverwezen naar een pagina waar hiervan feedback wordt getoont.
-
 ### De opdracht is gemaakt met de volgende technieken:
 
 - NodeJS
@@ -29,6 +21,14 @@ De verificatie van een user vindt plaats in de volgende stappen:
 - Server Side Rendering
 - Hidden Input Fields
 - Progressive enhancement
+
+### Verificatie
+
+De verificatie van een user vindt plaats in de volgende stappen:
+
+1. Gebruiker vult basisgegevens in.
+2. Gegevens worden vergeleken met reeds bekende informatie op de server.
+3. Indien de gebruikersinput matched met de bekende gegevens gaat met door naar het enquete scherm. Indien de gebruikersinput niet matched met de bekende gegevens wordt de user doorverwezen naar een pagina waar hiervan feedback wordt getoont.
 
 # Browsers
 
@@ -53,11 +53,15 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 **Ui enhancements**
 
-[ ] - Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range). `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
+[ ] - Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range).
+
+- `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
 
 [ ] Complete HTML
 
 [ ] Add CSS
+
+- CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
 
 [ ] Add fallbacks for each browser
 
