@@ -15,7 +15,14 @@ router.post("/", function (req, res, next) {
       const answerObj = {
         // assemble obj
         courseName: req.body.course,
-        answers: req.body,
+        answers: {
+          when: req.body.when,
+          profs: req.body.profs,
+          ratingCourse: req.body.ratingCourse,
+          ratingExplanation: req.body.ratingExplanation,
+          ratingUnderstanding: req.body.ratingUnderstanding,
+          feedback: req.body.feedback,
+        },
       };
       storedUser.answers.push(answerObj);
       const save = fs.writeFileSync(
@@ -25,7 +32,7 @@ router.post("/", function (req, res, next) {
     }
   });
 
-  res.render("finished", {
+  res.render("./pages/finished", {
     obj: req.body,
   });
 });

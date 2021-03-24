@@ -5,7 +5,6 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
 var enqueteRouterStart = require("./routes/startEnquete");
 var enqueteRouterSend = require("./routes/sendEnquete");
 var loginRouter = require("./routes/login");
@@ -25,7 +24,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
 app.use("/startEnquete", enqueteRouterStart);
 app.use("/sendEnquete", enqueteRouterSend);
 app.use("/login", loginRouter);
@@ -44,7 +42,7 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render("unauthorized", { obj: err.message });
+  res.render("./pages/error", { error: err });
 });
 
 module.exports = app;

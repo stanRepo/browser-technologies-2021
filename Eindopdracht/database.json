@@ -6,28 +6,16 @@
     "dateOfBirth": "1996-06-23",
     "answers": [
       {
-        "courseName": "Progressive Web App",
+        "courseName": "Web App From Scratch",
         "answers": {
-          "course": "Progressive Web App",
           "when": "2021-W09",
           "profs": "Joost",
-          "ratingCourse": "9",
+          "ratingCourse": "10",
           "ratingExplanation": "9",
-          "ratingUnderstanding": "9",
-          "feedback": "q121e1e1e1e1e  1e1e 1",
-          "firstName": "Stan",
-          "lastName": "Ooms",
-          "studentNumber": "500744003",
-          "dateOfBirth": "1996-06-23"
+          "ratingUnderstanding": "10",
+          "feedback": "wauw"
         }
       }
     ]
-  },
-  {
-    "firstName": "bob",
-    "lastName": "de boer",
-    "studentNumber": "000000000",
-    "dateOfBirth": "1996-06-23",
-    "answers": []
   }
 ]

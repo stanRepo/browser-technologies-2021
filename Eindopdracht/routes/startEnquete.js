@@ -20,7 +20,7 @@ router.post("/", function (req, res, next) {
     ) {
       // user verified to access enquete
       this.bool = true;
-      res.render("enquete", {
+      res.render("./pages/enquete", {
         obj: req.body,
       });
     }
@@ -28,7 +28,7 @@ router.post("/", function (req, res, next) {
 
   // user unverified to access enquete
   if (!bool) {
-    res.render("unauthorized", {
+    res.render("./pages/unauthorized", {
       obj: req.body,
     });
   }
