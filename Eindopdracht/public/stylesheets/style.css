@@ -1,5 +1,7 @@
 body {
-  padding: 50px;
+  padding: 0;
+  margin: 0;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   hyphens: auto;
   display: flex;
@@ -7,12 +9,12 @@ body {
   align-items: center;
 }
 header {
-  position: absolute;
-  top: 10px;
+  top: 20vh;
   left: 10px;
+  z-index: -10;
+  width: 30vw;
 }
 #restartForm > input {
-  position: absolute;
   margin-left: -100vw;
 }
 a {
@@ -33,5 +35,17 @@ form > fieldset {
 form {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  min-width: 300px;
+  width: 40vw;
+}
+tbody {
+  text-align: center;
+}
+table {
+  background-color: whitesmoke;
+  width: 80vw;
+}
+
+details[open] {
+  background-color: white;
 }
