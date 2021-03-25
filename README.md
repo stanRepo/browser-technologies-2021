@@ -60,16 +60,16 @@ Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de functi
 
 **Useable Layer**
 
-[ ] Add CSS
+- [ ] Add CSS
 
-- CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
+- - CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
 
-[x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
+- [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
 **Pleasurable Layer**
 
-[x] Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range).
+- [x] Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range).
 
-- `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
+- - `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
 
-[x] Progress Bar [Browser Support](https://caniuse.com/?search=onScroll)
+- [x] Progress Bar [Browser Support](https://caniuse.com/?search=onScroll)
