@@ -1,27 +1,27 @@
 export default function () {
+  const nameAttributes = [
+    "ratingCourse",
+    "ratingExplanation",
+    "ratingUnderstanding",
+  ];
   // select elements
   const elements = document.querySelectorAll("fieldset");
-
-  console.log(elements);
-
   elements.forEach((element, i) => {
-    element.innerHTML = `<section>
-    <p class="rangeCounter id="rangeCounter${i}""></p>
-    <input type="range" min="1" max="10">
-    </section>
+    // create new <range> elements and <p> output counters
+    element.innerHTML = `
+    <p class="rangeCounter" id="rangeCounter${i}">5</p>
+    <input type="range" name="${nameAttributes[i]}" min="1" max="10" required id="range${i}">
     `;
   });
-  // select counters and new RANGE inputs
+  // select counters
   const counters = document.querySelectorAll(".rangeCounter");
-  const rangeInputs = document.querySelectorAll("input[type=range]");
-  console.log(rangeInputs);
-
-  counters.forEach((counter) => {
-    const currentValue = document.querySelector(".rangeCounter ~ input");
-    console.log(currentValue);
-    currentValue.addEventListener("change", (e) => {
-      console.log(e.target.value);
-      counter.innerHTML = e.target.value;
+  // loop over counters
+  counters.forEach((counter, i) => {
+    const thisInput = document.querySelector(`#range${i}`); // select input element <range>
+    const thisOutput = counter; // for readability only
+    thisInput.addEventListener("input", (e) => {
+      // add event that fires on user input
+      thisOutput.innerHTML = e.target.value; // set the counter to the input value
     });
   });
 }

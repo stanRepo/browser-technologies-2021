@@ -2,11 +2,9 @@
 <html>
   <%- include('../partials/head.ejs') %>
   <body>
-    <%- include('../partials/backHome.ejs') %>
     <section>
-      <header>
-        <h3>Enquete</h3>
-      </header>
+      <%- include('../partials/title.ejs') %>
+    
       <h1><%= obj.firstName%></h1>
       
       <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">

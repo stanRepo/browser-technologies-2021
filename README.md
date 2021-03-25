@@ -45,43 +45,29 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 ## CheckList
 
-**Real Time Feedback**
+**Functional Layer**
 
-- [ ] Progress Bar `"onScroll"` [Browser Support](https://caniuse.com/?search=onScroll)
-
-- [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
-
-**Ui enhancements**
-
-- [ ] Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range).
-
-- - `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
-
-- [] Complete HTML
-
-- [] Add CSS
-
-- - CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
+- [x] Complete HTML
 
 - [ ] Add fallbacks for each browser
-
 - - [ ] Chrome
 - - [ ] Firefox
 - - [ ] Safari
 - - [ ] Samsung Internet
 
-# Lagen
-
-## Functional
-
 Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de functional layer. Hierbij is dus GEEN CSS en JS toegepast.
 
-## Useable
+**Useable Layer**
 
-Wanneer CSS wel toegepast wordt is de site
+- [] Add CSS
 
-### Progressive Enhancements
+- - CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
 
-## Pleasureable
+- [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
-### Progressive Enhancements
+**Pleasurable Layer**
+
+- [x] Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range).
+- - `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
+
+- [x] Progress Bar [Browser Support](https://caniuse.com/?search=onScroll)

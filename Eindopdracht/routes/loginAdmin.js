@@ -3,13 +3,11 @@ var router = express.Router();
 
 router.post("/", function (req, res, next) {
   console.log("adminroute accessed");
-  console.log(req.body.username);
-  console.log(req.body.pw);
 
   if ((req.body.username === "admin" && req.body.pw === "0000") || 0000) {
-    res.render("admin");
+    res.render("./pages/admin");
   } else {
-    res.render("adminLoginFailed");
+    res.render("./pages/adminLoginFailed", { obj: req.body });
   }
 });
 

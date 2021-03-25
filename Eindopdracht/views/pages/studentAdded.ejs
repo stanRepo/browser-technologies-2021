@@ -1,0 +1,28 @@
+<h2><%= obj.firstName%> is toegevoegd aan de database</h2>
+
+<h3>Wil je nog iemand toevoegen?</h3>
+
+<section>
+  <form action="/loginAdmin" method="POST" autocomplete="on">
+    <input
+      type="text"
+      name="username"
+      id="username"
+      placeholder="username"
+      value="admin"
+      autocomplete="on"
+      hidden
+      required
+    />
+
+    <input
+      type="password"
+      name="pw"
+      id="id"
+      value="0000"
+      autocomplete="on"
+      hidden
+    />
+    <button type="submit">Klik hier</button>
+  </form>
+</section>

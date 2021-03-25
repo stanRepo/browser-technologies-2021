@@ -1,4 +1,4 @@
-section#progressBarContainer {
+div#progressBarContainer {
   width: 100vw;
   height: 15px;
   background-color: grey;
@@ -16,6 +16,6 @@ var#progressBar {
   transition: 0.3s;
   max-width: 300px;
 }
-section#progressBarContainer > p {
+div#progressBarContainer > p {
   color: white;
 }

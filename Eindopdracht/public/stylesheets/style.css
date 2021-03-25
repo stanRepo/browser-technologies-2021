@@ -2,6 +2,14 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   hyphens: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 #restartForm > input {
   position: absolute;

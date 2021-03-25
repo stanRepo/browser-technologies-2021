@@ -9,6 +9,7 @@ var enqueteRouterStart = require("./routes/startEnquete");
 var enqueteRouterSend = require("./routes/sendEnquete");
 var loginRouter = require("./routes/login");
 var loginAdminRouter = require("./routes/loginAdmin");
+var addStudentRouter = require("./routes/addStudent");
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use("/startEnquete", enqueteRouterStart);
 app.use("/sendEnquete", enqueteRouterSend);
 app.use("/login", loginRouter);
 app.use("/loginAdmin", loginAdminRouter);
+app.use("/addStudent", addStudentRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
