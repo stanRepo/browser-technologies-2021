@@ -68,8 +68,21 @@ Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de functi
 
 **Pleasurable Layer**
 
-- [x] Progressively enhance enquete UI with `<range>` with clear instructions. [Browser Support](https://caniuse.com/input-range).
+- [x] Progressively enhance enquete UI met `<input type="range">` elementen. Geef hierbij een extra element die het voor de gebruiker duidelijk maakt om het input element goed te gebruiken. Dit element laat de huidige waarde zien van het `<input type="range">` element. [Browser Support](https://caniuse.com/input-range).<br>
+      `<input type="range">` elementen zijn van nature niet user-friendly. Ik vervang de `<input type"radio">` elementen pas nadat geverifieerd is dat `javascript` aan staat. Hierdoor kan naast een `<input type="range">` ook extra user feedback worden getoond.
 
-- - `<range>` elements are not very user friendly by nature. I will add them once JS is allowed.
+- [ ] Vervang `<input type"date">` door:
+
+`<input type="number" name="dd">`
+
+`<input type="number" name="mm">`
+
+`<input type="number" name="yyyy">`
+
+_"De UK Government Digital Services raad het gebruik van `<input type="date">` niet aan vanwege problemen die zij ondervonden bij hun gebruikerstest"_(1)
 
 - [x] Progress Bar [Browser Support](https://caniuse.com/?search=onScroll)
+
+# Referenties
+
+1. Making input type=date complicated. Peter-Paul Koch. Medium. 17-01-2017. https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a

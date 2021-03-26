@@ -1,16 +1,49 @@
 <section>
   <h2>Vul het formulier naar eigen waarheid in. Bedankt Alvast</h2>
   <form action="/startEnquete" method="POST" autocomplete="on">
-    <label for="firstName">Voornaam</label>
-    <input type="text" name="firstName" id="firstName" />
+    <fieldset>
+      <label for="firstName">Voornaam</label>
+      <input type="text" name="firstName" id="firstName" />
+    </fieldset>
 
-    <label for="lastName">Achternaam</label>
-    <input type="text" name="lastName" id="lastName" />
+    <fieldset>
+      <label for="lastName">Achternaam</label>
+      <input type="text" name="lastName" id="lastName" />
+    </fieldset>
+    <fieldset>
+      <label for="studentNumber">Studentnummer</label>
+      <input
+        type="text"
+        minlength="9"
+        name="studentNumber"
+        id="studentNumber"
+      />
+    </fieldset>
+    <fieldset id="dateFieldset">
+      <label for="dateOfBirth">Geboortedatum</label>
 
-    <label for="studentNumber">Studentnummer</label>
-    <input type="text" minlength="9" name="studentNumber" id="studentNumber" />
-    <label for="dateOfBirth">Verjaardag</label>
-    <input type="date" name="dateOfBirth" id="dateOfBirth" />
+      <input
+        class="inputDateNumberElements"
+        type="number"
+        name="dd"
+        placeholder="dd"
+        pattern="[0-9]{2}"
+      />
+      <input
+        class="inputDateNumberElements"
+        type="number"
+        name="mm"
+        placeholder="mm"
+        pattern="[0-9]{2}"
+      />
+      <input
+        class="inputDateNumberElements"
+        type="number"
+        name="yyyy"
+        placeholder="yyyy"
+        pattern="[0-9]{4}"
+      />
+    </fieldset>
 
     <button type="submit">submit</button>
   </form>

@@ -8,43 +8,49 @@
       <h1><%= obj.firstName%></h1>
       
       <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">
-        <label for="course"><h4>Over welk vak wil je het hebben?</h4></label>
-        <br />
-      <select name="course" id="course" required>
-        <option value="" disabled selected>Kies een Vak</option>
-        <option value="Web App From Scratch">Web App From Scratch</option>
-        <option value="CSS To The Rescue">CSS To The Rescue</option>
-        <option value="Browser Technologies">Browser Technologies</option>
-        <option value="Progressive Web App">Progressive Web App</option>
-        <option value="Real Time Web">Real Time Web</option>
-        <option value="Web Design">Web Design</option>
-      </select>
       
-      <label for="when"> <h4>Wanneer begon je met dit vak?</h4> </label>
-      
-      <input
-      type="week"
-      name="when"
+        <fieldset>
+          <label for="course"><h4>Over welk vak wil je het hebben?</h4></label>
+          <br />
+          <select name="course" id="course" required>
+            <option value="" disabled selected>Kies een Vak</option>
+            <option value="Web App From Scratch">Web App From Scratch</option>
+            <option value="CSS To The Rescue">CSS To The Rescue</option>
+            <option value="Browser Technologies">Browser Technologies</option>
+            <option value="Progressive Web App">Progressive Web App</option>
+            <option value="Real Time Web">Real Time Web</option>
+            <option value="Web Design">Web Design</option>
+          </select>
+        </fieldset>
           
-      min="2021-W04"
-      max="2021-W40"
-      required
-      />
-      
-      <label for="profs"> <h4>Bij welke docent werd je ingedeeld?</h4></label>
-      <select name="profs" id="">
-        <option value="" disabled selected>Kies een docent</option>
-        <option value="Joost">Joost</option>
-        <option value="Peter">Peter-Paul</option>
-        <option value="Koop">Koop</option>
-        <option value="Vasilis">Vasilis</option>
-        <option value="Vasilis">Sanne</option>
-      </select>
+        <fieldset>
+          <label for="when"> <h4>Wanneer begon je met dit vak?</h4> </label>
+          <input
+          type="week"
+          name="when"
+          
+          min="2021-W04"
+          max="2021-W40"
+          required
+          />
+        </fieldset>
+        
+        <fieldset>
+          <label for="profs"> <h4>Bij welke docent werd je ingedeeld?</h4></label>
+          <select name="profs" id="">
+            <option value="" disabled selected>Kies een docent</option>
+            <option value="Joost">Joost</option>
+            <option value="Peter">Peter-Paul</option>
+            <option value="Koop">Koop</option>
+            <option value="Vasilis">Vasilis</option>
+            <option value="Vasilis">Sanne</option>
+          </select>
+        </fieldset>
       
       <h4>Baseer je volgende antwoorden op een schaal 1-10.</h4>
       
       <label for="ratingCourse" ><h4>Hoe beoordeel je de lesstof?</h4></label>
-      <fieldset>
+      <fieldset  class="radioInputFieldset">
         
         <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="1" required>
         <p>1</p>
@@ -83,7 +89,7 @@
 <label for="ratingExplanation"
 ><h4>Hoe beoordeel je de uitleg van de lesstof?</h4>
 </label>
-<fieldset>
+<fieldset  class="radioInputFieldset">
   
   <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox"value="1"required>
   <p>1</p>
@@ -120,7 +126,7 @@
 <label for="ratingUnderstanding"
 ><h4>Hoe goed begrijp je de lesstof nu?</h4></label
 >
-<fieldset>
+<fieldset class="radioInputFieldset">
   
   <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox"value="1"required>
   <p>1</p>

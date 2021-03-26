@@ -5,7 +5,7 @@ export default function () {
     "ratingUnderstanding",
   ];
   // select elements
-  const elements = document.querySelectorAll("fieldset");
+  const elements = document.querySelectorAll(".radioInputFieldset");
   elements.forEach((element, i) => {
     // create new <range> elements and <p> output counters
     element.innerHTML = `

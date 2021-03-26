@@ -21,8 +21,7 @@ export default function () {
             const rangeCounter = document.querySelector(
               `#rangeCounter${i - 3}`
             );
-            console.log(i);
-            console.log(rangeCounter);
+
             rangeCounter.innerHTML = `${formHistory[el.name]}`;
           }
         }
@@ -54,7 +53,6 @@ export default function () {
   }
 
   function deleteFormHistory() {
-    console.log("activeDeleteHistory");
     if (window.location.pathname === "/sendEnquete") {
       localStorage.removeItem("formHistory");
     }

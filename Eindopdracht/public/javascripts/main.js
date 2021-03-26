@@ -2,6 +2,7 @@ import progressBarFeature from "./progressiveEnhancements/progressBar.js";
 import localStorageFeature from "./progressiveEnhancements/localStorage.js";
 import rangeElementsFeature from "./progressiveEnhancements/rangeElements.js";
 import onlineStatusFeature from "./progressiveEnhancements/onlineStatus.js";
+import replaceInputDateFeature from "./progressiveEnhancements/replaceInputDate.js";
 
 const activateFeatures = {
   progressBar: () => {
@@ -22,9 +23,15 @@ const activateFeatures = {
       onlineStatusFeature();
     }
   },
+  replaceInputDate: () => {
+    if (window.screen.width >= 480) {
+      replaceInputDateFeature();
+    }
+  },
 };
 
 activateFeatures.rangeElements();
 activateFeatures.progressBar();
 activateFeatures.localStorage();
 activateFeatures.onlineStatus();
+activateFeatures.replaceInputDate();
