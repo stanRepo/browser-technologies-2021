@@ -9,11 +9,16 @@ data = JSON.parse(data);
 // Catch the form on POST request
 router.post("/", function (req, res, next) {
   let bool = false;
-  console.log(data);
+  let dateString = "";
+
+  if (!req.body.dateOfBirth) {
+    dateString = req.body.yyyy + "-" + req.body.mm + "-" + req.body.dd;
+  }
+  console.log(req.body);
+  console.log(dateString);
   data.forEach((storedUser) => {
-    // console.log(storedUser);
     if (
-      storedUser.dateOfBirth === req.body.dateOfBirth &&
+      storedUser.dateOfBirth === dateString &&
       storedUser.studentNumber === req.body.studentNumber &&
       storedUser.firstName === req.body.firstName &&
       storedUser.lastName === req.body.lastName

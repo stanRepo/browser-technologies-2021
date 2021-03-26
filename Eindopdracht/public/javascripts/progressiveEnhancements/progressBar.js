@@ -1,11 +1,11 @@
 export default function () {
-  if (window.location.pathname === "/startEnquete") {
-    // select elements
-    const container = document.querySelector("#progressBarContainer");
-    const bar = document.querySelector("#progressBar");
-    const inputFields = document.querySelectorAll("input, select, textarea");
-    let count = 1;
+  // select elements
+  const container = document.querySelector("#progressBarContainer");
+  const bar = document.querySelector("#progressBar");
+  const inputFields = document.querySelectorAll("input, select, textarea");
+  let count = 1;
 
+  if (container) {
     // show progress bar
     container.style.display = "block";
 

@@ -15,7 +15,15 @@ header {
   top: 20vh;
   left: 10px;
   z-index: -10;
-  width: 30vw;
+  width: 80vw;
+}
+fieldset {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  font-size: larger;
 }
 #restartForm > input {
   margin-left: -100vw;
@@ -52,4 +60,8 @@ table {
 
 details[open] {
   background-color: white;
+}
+
+#dateFieldset {
+  flex-direction: column;
 }
