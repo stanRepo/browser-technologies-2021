@@ -1,4 +1,6 @@
 export default function () {
+  console.log(window.location.pathname);
+
   const parentFieldset = document.querySelector("#dateFieldset");
   const inputDateNumberElements = document.querySelectorAll(
     ".inputDateNumberElements"

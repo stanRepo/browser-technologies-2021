@@ -34,6 +34,37 @@
           value="<%= obj.dateOfBirth%>"
           hidden
         />
+       
+  
+    
+          <input
+            class="inputDateNumberElements"
+            type="number"
+            name="dd"
+            placeholder="dd"
+            pattern="[0-9]{2}"
+            value="<%= obj.dd%>"
+            hidden
+          />
+          <input
+            class="inputDateNumberElements"
+            type="number"
+            name="mm"
+            placeholder="mm"
+            pattern="[0-9]{2}"
+            value="<%= obj.mm%>"
+            hidden
+          />
+          <input
+            class="inputDateNumberElements"
+            type="number"
+            name="yyyy"
+            placeholder="yyyy"
+            pattern="[0-9]{4}"
+            value="<%= obj.yyyy%>"
+            hidden
+          />
+
         <button type="submit">Klik hier</button>
       </form>
     </section>
