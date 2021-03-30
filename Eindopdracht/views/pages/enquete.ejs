@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <%- include('../partials/head.ejs') %>
   <body>
     <section>
@@ -10,7 +10,7 @@
       <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">
       
         <fieldset>
-          <label for="course"><h4>Over welk vak wil je het hebben?</h4>
+          <label for="course">Over welk vak wil je het hebben?
             <select name="course" id="course" required>
             <option value="" disabled selected>Kies een Vak</option>
             <option value="Web App From Scratch">Web App From Scratch</option>
@@ -25,20 +25,21 @@
         </fieldset>
           
         <fieldset>
-          <label for="when"> <h4>Wanneer begon je met dit vak?</h4> 
+          <label for="when"> Wanneer begon je met dit vak?
             <input
           type="week"
           name="when"
           min="2021-W04"
           max="2021-W40"
+          id="when"
           required
           /></label>
           
         </fieldset>
         
         <fieldset>
-          <label for="profs"> <h4>Bij welke docent werd je ingedeeld?</h4>
-            <select name="profs" id="">
+          <label for="profs"> Bij welke docent werd je ingedeeld?
+            <select name="profs" id="profs">
             <option value="" disabled selected>Kies een docent</option>
             <option value="Joost">Joost</option>
             <option value="Declan">Declan</option>
@@ -55,18 +56,18 @@
       
       
       <fieldset  class="radioInputFieldset">
-        <label for="ratingCourse" ><h4>Hoe beoordeel je de lesstof?</h4></label>
+        <label for="ratingCourse" >Hoe beoordeel je de lesstof?</label>
       
-    <label>1: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="1" required></input></label>
-    <label>2: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="2" required></input></label>
-    <label>3: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="3" required></input></label>
-    <label>4: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="4" required></input></label>
-    <label>5: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="5" required></input></label>
-    <label>6: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="6" required></input></label>
-    <label>7: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="7" required></input></label>
-    <label>8: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="8" required></input></label>
-    <label>9: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="9" required></input></label>
-    <label>10: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="10" required></input></label>
+    <label for="ratingCourse1">1: <input id="ratingCourse1" type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="1" required></input></label>
+     <label for="ratingCourse2">2: <input id="ratingCourse2"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="2" required></input></label>
+     <label for="ratingCourse3">3: <input id="ratingCourse3"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="3" required></input></label>
+     <label for="ratingCourse4">4: <input id="ratingCourse4"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="4" required></input></label>
+     <label for="ratingCourse5">5: <input id="ratingCourse5"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="5" required></input></label>
+     <label for="ratingCourse6">6: <input id="ratingCourse6"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="6" required></input></label>
+     <label for="ratingCourse7">7: <input id="ratingCourse7"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="7" required></input></label>
+     <label for="ratingCourse8">8: <input id="ratingCourse8"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="8" required></input></label>
+     <label for="ratingCourse9">9: <input id="ratingCourse9"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="9" required></input></label>
+     <label for="ratingCourse10">10: <input id="ratingCourse10"type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="10" required></input></label>
  
 
 <!-- <p>1</p>
@@ -76,45 +77,45 @@
 
 <fieldset  class="radioInputFieldset">
   <label for="ratingExplanation"
-><h4>Hoe beoordeel je de uitleg van de lesstof?</h4>
+>Hoe beoordeel je de uitleg van de lesstof?
 </label>
-  <label>1: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="1" required></input></label>
-  <label>2: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="2" required></input></label>
-  <label>3: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="3" required></input></label>
-  <label>4: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="4" required></input></label>
-  <label>5: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="5" required></input></label>
-  <label>6: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="6" required></input></label>
-  <label>7: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="7" required></input></label>
-  <label>8: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="8" required></input></label>
-  <label>9: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="9" required></input></label>
-  <label>10: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="10" required></input></label>
+  <label for="ratingCourseExplanation1">1: <input id="ratingCourseExplanation1" type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="1" required></input></label>
+  <label for="ratingCourseExplanation2">2: <input id="ratingCourseExplanation2" type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="2" required></input></label>
+  <label for="ratingCourseExplanation3">3: <input id="ratingCourseExplanation3"  type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="3" required></input></label>
+  <label for="ratingCourseExplanation4">4: <input id="ratingCourseExplanation4"  type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="4" required></input></label>
+  <label for="ratingCourseExplanation5">5: <input id="ratingCourseExplanation5" type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="5" required></input></label>
+  <label for="ratingCourseExplanation6">6: <input id="ratingCourseExplanation6" type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="6" required></input></label>
+  <label for="ratingCourseExplanation7">7: <input id="ratingCourseExplanation7" type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="7" required></input></label>
+  <label for="ratingCourseExplanation8">8: <input id="ratingCourseExplanation8" type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="8" required></input></label>
+  <label for="ratingCourseExplanation9">9: <input id="ratingCourseExplanation9" type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="9" required></input></label>
+  <label for="ratingCourseExplanation10">10: <input id="ratingCourseExplanation10"  type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="10" required></input></label>
 
 </fieldset>
 
 <fieldset class="radioInputFieldset">
   
 <label for="ratingUnderstanding"
-><h4>Hoe goed begrijp je de lesstof nu?</h4></label
+>Hoe goed begrijp je de lesstof nu?</label
 >
-  <label>1: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="1" required></input></label>
-  <label>2: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="2" required></input></label>
-  <label>3: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="3" required></input></label>
-  <label>4: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="4" required></input></label>
-  <label>5: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="5" required></input></label>
-  <label>6: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="6" required></input></label>
-  <label>7: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="7" required></input></label>
-  <label>8: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="8" required></input></label>
-  <label>9: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="9" required></input></label>
-  <label>10: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="10" required></input></label>
+  <label for="ratingCourseUnderstanding1">1: <input id="ratingCourseUnderstanding1"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="1" required></input></label>
+  <label for="ratingCourseUnderstanding2">2: <input id="ratingCourseUnderstanding2"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="2" required></input></label>
+  <label for="ratingCourseUnderstanding3">3: <input id="ratingCourseUnderstanding3"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="3" required></input></label>
+  <label for="ratingCourseUnderstanding4">4: <input id="ratingCourseUnderstanding4"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="4" required></input></label>
+  <label for="ratingCourseUnderstanding5">5: <input id="ratingCourseUnderstanding5"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="5" required></input></label>
+  <label for="ratingCourseUnderstanding6">6: <input id="ratingCourseUnderstanding6"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="6" required></input></label>
+  <label for="ratingCourseUnderstanding7">7: <input id="ratingCourseUnderstanding7"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="7" required></input></label>
+  <label for="ratingCourseUnderstanding8">8: <input id="ratingCourseUnderstanding8"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="8" required></input></label>
+  <label for="ratingCourseUnderstanding9">9: <input id="ratingCourseUnderstanding9"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="9" required></input></label>
+  <label for="ratingCourseUnderstanding10">10: <input id="ratingCourseUnderstanding10"type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="10" required></input></label>
 
 </fieldset>
 
       <label for="comments"
-      ><h4>Is er iets wat je graag wilt vertellen?</h4></label>
+      >Is er iets wat je graag wilt vertellen?</label>
       <textarea
       form="enquete"
       name="feedback"
-      id=""
+      id="comments"
       cols="30"
       rows="5"
       placeholder="Schrijf hier je feedback voor dit vak."
@@ -139,7 +140,6 @@
         type="number"
         name="dd"
         placeholder="dd"
-        pattern="[0-9]{2}"
         value="<%= obj.dd%>"
         hidden
       />
@@ -148,7 +148,6 @@
         type="number"
         name="mm"
         placeholder="mm"
-        pattern="[0-9]{2}"
         value="<%= obj.mm%>"
         hidden
       />
@@ -157,7 +156,6 @@
         type="number"
         name="yyyy"
         placeholder="yyyy"
-        pattern="[0-9]{4}"
         value="<%= obj.yyyy%>"
         hidden
       />

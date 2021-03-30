@@ -42,6 +42,9 @@ label {
 #restartForm > input {
   margin-left: -100vw;
 }
+#restartForm {
+  border-bottom: 2px solid lightseagreen;
+}
 a {
   color: #00b7ff;
 }
@@ -108,7 +111,7 @@ details > ul > li > p {
   justify-content: center;
   width: 100vw;
   margin-top: 10px;
-  border-top: 2px solid grey;
+  border-top: 2px solid lightseagreen;
   padding: 10px;
 }
 #previousEnquetesMobile > span {
@@ -117,14 +120,14 @@ details > ul > li > p {
 @supports (display: grid) {
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   /* show table, hide mobileUI */
 
   #previousEnquetesMobile {
     display: none;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   /* show mobileUI, hide Table*/
   #previousEnquetesTable {
     display: none;

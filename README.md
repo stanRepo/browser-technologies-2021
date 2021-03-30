@@ -48,6 +48,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 **Functional Layer**
 
 - [x] Maak alle HTML compleet
+- [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
 [ ] Voeg 'fallbacks' toe voor elke geteste browser
 
@@ -61,10 +62,8 @@ Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de functi
 **Useable Layer**
 
 - [x] Voeg CSS toe.
-- [x]
+- [x] :focus. Focus pseudoclass is gebruikt om inputvelden duidelijker en herkenbaarder te maken.
 - - CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
-
-- [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
 **Pleasurable Layer**
 
@@ -83,17 +82,48 @@ _"De UK Government Digital Services raad het gebruik van `<input type="date">` n
 
 - [x] Progress Bar [Browser Support](https://caniuse.com/?search=onScroll)
 
-# Testing Browsers
+# Testing
 
-### Tab Accessability
+## HTML Validator
+
+Ik heb gebruik gemaakt van de [HTML validation tool](https://validator.w3.org/). De volgende 3 paginas zijn hiermee gecontroleerd en vervolgens geoptimaliseerd totdat de semantiek volgens deze tool optimaal was:
+
+- "/" (indexpagina)
+- "/startEnquete" (daadwerkelijke enquete)
+- "/sendEnquete" (Enquete verzonden. Overzichtspagina reeds verzonden enquetes)
+
+---
+
+## Tab Accessability
 
 De volgende afbeeldingen zijn gemaakt met de [Chromelens Chrome Extension](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd)
 
-Tab path bij uitgeschakelde CSS op de index pagina.
-![Tab path bij uitgeschakelde CSS](./assets/noStylesTabIndex.png)
+1. Tab path bij uitgeschakelde CSS op de index pagina.
+<details>
 
-Tab Path bij volledige enhancement op enquete pagina
+![Tab path bij uitgeschakelde CSS](./assets/enhancedTabIndex.png)
+
+</details>
+
+2. Tab Path bij volledige enhancement op enquete pagina
+
+<details>
+
 ![Tab path bij volledige enhancement](./assets/enhancedTabEnquete.png)
+
+</details>
+
+3. Tab Path bij volledige enhancement op enquete verzonden ("/sendEnquete") pagina. Deze afbeelding is ingekort i.v.m. de lengte van de pagina. Het bereik van het 'tabben' kwam t/m de laatste reeds verzonden enquetes `<details>` element.
+
+<details>
+
+![Tab path bij volledige enhancement](./assets/enhancedTabFinished.png)
+
+</details>
+
+---
+
+Ook wanneer CSS en JS uitgeschakeld zijn blijft de pagina volledig tab-baar. De gebruiker is nog steeds in staat dezelfde functionaliteiten te gebruiken.
 
 # Referenties
 

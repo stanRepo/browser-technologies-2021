@@ -1,25 +1,29 @@
-<h2>Succesfully logged in as admin</h2>
+<!DOCTYPE html>
+<html lang="nl">
+  <%- include('../partials/head.ejs')%>
+  <body>
+    <h2>Succesfully logged in as admin</h2>
+    <section>
+      <h2>Voeg een student toe aan de database</h2>
+      <form action="/addStudent" method="POST">
+        <label for="firstName">Voornaam</label>
+        <input type="text" name="firstName" id="firstName" />
 
-<section>
-  <h2>Voeg een student toe aan de database</h2>
-  <form action="/addStudent" method="POST">
-    <label for="firstName">Voornaam</label>
-    <input type="text" name="firstName" id="firstName" />
+        <label for="lastName">Achternaam</label>
+        <input type="text" name="lastName" id="lastName" />
 
-    <label for="lastName">Achternaam</label>
-    <input type="text" name="lastName" id="lastName" />
-
-    <label for="studentNumber">Studentnummer</label>
-    <input
-      type="text"
-      minlength="9"
-      maxlength="9"
-      name="studentNumber"
-      id="studentNumber"
-    />
-    <label for="dateOfBirth">Verjaardag</label>
-    <input type="date" name="dateOfBirth" id="dateOfBirth" />
-
-    <button type="submit">submit</button>
-  </form>
-</section>
+        <label for="studentNumber">Studentnummer</label>
+        <input
+          type="text"
+          minlength="9"
+          maxlength="9"
+          name="studentNumber"
+          id="studentNumber"
+        />
+        <label for="dateOfBirth">Verjaardag</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" />
+        <button type="submit">submit</button>
+      </form>
+    </section>
+  </body>
+</html>

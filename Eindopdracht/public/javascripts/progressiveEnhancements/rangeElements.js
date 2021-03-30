@@ -11,14 +11,14 @@ export default function () {
     element.innerHTML = `
     <label for="${nameAttributes[i]}" class="rangeCounter" id="rangeCounter${i}">5</label>
     <label for="${nameAttributes[i]}">
-    <input type="range" name="${nameAttributes[i]}" min="1" max="10" required id="range${i}"></label>
+    <input type="range" name="${nameAttributes[i]}" min="1" max="10" id="${nameAttributes[i]}"></label>
     `;
   });
   // select counters
   const counters = document.querySelectorAll(".rangeCounter");
   // loop over counters
   counters.forEach((counter, i) => {
-    const thisInput = document.querySelector(`#range${i}`); // select input element <range>
+    const thisInput = document.querySelector(`#${nameAttributes[i]}`); // select input element <range>
     const thisOutput = counter; // for readability only
     thisInput.addEventListener("input", (e) => {
       // add event that fires on user input
