@@ -1,29 +1,43 @@
 h1 h2 h3 h4 h5 h6 span p a button:focus {
-  font-family: "Source Serif Pro", serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  max-width: 100vw;
+}
+h1 h2 h3 h4 h5 h6 {
+  color: #473398;
 }
 
 body {
   padding: 0;
   margin: 0;
-
   hyphens: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(208, 235, 208);
 }
 header {
   top: 20vh;
   left: 10px;
-  z-index: -10;
-  width: 80vw;
+  display: flex;
+  padding: 10px;
+}
+header > a:visited:link {
+  text-decoration: none;
+  color: inherit;
 }
 fieldset {
-  min-width: 300px;
+  min-width: 200px;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
 }
 label {
-  font-size: larger;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
 }
 #restartForm > input {
   margin-left: -100vw;
@@ -31,37 +45,88 @@ label {
 a {
   color: #00b7ff;
 }
-#date {
+.date {
   font-size: x-small;
   color: grey;
 }
-
+h3 {
+  text-decoration: underline;
+}
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 p {
-  color: blue;
+  color: black;
 }
 form > fieldset {
   display: flex;
   flex-direction: row;
+  min-width: 300px;
+}
+
+.radioInputFieldset {
+  justify-content: space-around;
+}
+button {
+  padding: 5px;
+  margin: 10px;
+}
+.rangeCounter {
+  font-size: larger;
 }
 form {
   display: flex;
   flex-direction: column;
   min-width: 300px;
-  width: 40vw;
+  align-items: center;
 }
 tbody {
   text-align: center;
 }
 table {
   background-color: whitesmoke;
-  width: 80vw;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
 }
 
 details[open] {
   background-color: white;
 }
+details > ul > li > p {
+  text-decoration: underline;
+}
 
 #dateFieldset {
   flex-direction: column;
+}
+
+#previousEnquetesMobile > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10px;
+  border-top: 2px solid grey;
+  padding: 10px;
+}
+#previousEnquetesMobile > span {
+}
+
+@supports (display: grid) {
+}
+
+@media screen and (min-width: 400px) {
+  /* show table, hide mobileUI */
+
+  #previousEnquetesMobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* show mobileUI, hide Table*/
+  #previousEnquetesTable {
+    display: none;
+  }
 }

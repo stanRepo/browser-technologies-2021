@@ -27,7 +27,7 @@ router.post("/", function (req, res, next) {
     console.log(obj);
     const newData = data;
 
-    data = Array.fromdata.push(obj);
+    data = Array.from(data.push(obj));
     console.log(data);
     // const save = fs.writeFileSync(
     //   path.resolve(__dirname, "..", "database.json"),

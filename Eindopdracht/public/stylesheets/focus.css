@@ -1,0 +1,8 @@
+/* This file includes focus styles from the useable layer */
+
+@supports selector(:focus-within) {
+  input,
+  label:focus-within {
+    background-color: rgb(254, 255, 185);
+  }
+}

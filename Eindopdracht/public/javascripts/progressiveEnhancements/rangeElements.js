@@ -9,8 +9,9 @@ export default function () {
   elements.forEach((element, i) => {
     // create new <range> elements and <p> output counters
     element.innerHTML = `
-    <p class="rangeCounter" id="rangeCounter${i}">5</p>
-    <input type="range" name="${nameAttributes[i]}" min="1" max="10" required id="range${i}">
+    <label for="${nameAttributes[i]}" class="rangeCounter" id="rangeCounter${i}">5</label>
+    <label for="${nameAttributes[i]}">
+    <input type="range" name="${nameAttributes[i]}" min="1" max="10" required id="range${i}"></label>
     `;
   });
   // select counters

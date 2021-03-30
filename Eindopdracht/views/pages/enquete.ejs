@@ -10,9 +10,8 @@
       <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">
       
         <fieldset>
-          <label for="course"><h4>Over welk vak wil je het hebben?</h4></label>
-          <br />
-          <select name="course" id="course" required>
+          <label for="course"><h4>Over welk vak wil je het hebben?</h4>
+            <select name="course" id="course" required>
             <option value="" disabled selected>Kies een Vak</option>
             <option value="Web App From Scratch">Web App From Scratch</option>
             <option value="CSS To The Rescue">CSS To The Rescue</option>
@@ -20,38 +19,43 @@
             <option value="Progressive Web App">Progressive Web App</option>
             <option value="Real Time Web">Real Time Web</option>
             <option value="Web Design">Web Design</option>
-          </select>
+          </select></label>
+          
+      
         </fieldset>
           
         <fieldset>
-          <label for="when"> <h4>Wanneer begon je met dit vak?</h4> </label>
-          <input
+          <label for="when"> <h4>Wanneer begon je met dit vak?</h4> 
+            <input
           type="week"
           name="when"
-          
           min="2021-W04"
           max="2021-W40"
           required
-          />
+          /></label>
+          
         </fieldset>
         
         <fieldset>
-          <label for="profs"> <h4>Bij welke docent werd je ingedeeld?</h4></label>
-          <select name="profs" id="">
+          <label for="profs"> <h4>Bij welke docent werd je ingedeeld?</h4>
+            <select name="profs" id="">
             <option value="" disabled selected>Kies een docent</option>
             <option value="Joost">Joost</option>
-            <option value="Peter">Peter-Paul</option>
+            <option value="Declan">Declan</option>
             <option value="Koop">Koop</option>
             <option value="Vasilis">Vasilis</option>
+            <option value="Peter">Peter-Paul</option>
             <option value="Vasilis">Sanne</option>
           </select>
+        </label>
+
         </fieldset>
       
-      <h4>Baseer je volgende antwoorden op een schaal 1-10.</h4>
+      <h3>Baseer je volgende antwoorden op een schaal 1-10.</h3>
       
-      <label for="ratingCourse" ><h4>Hoe beoordeel je de lesstof?</h4></label>
+      
       <fieldset  class="radioInputFieldset">
-        
+        <label for="ratingCourse" ><h4>Hoe beoordeel je de lesstof?</h4></label>
       
     <label>1: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="1" required></input></label>
     <label>2: <input type="radio" name="ratingCourse" class="ratingCourseCheckbox" value="2" required></input></label>
@@ -69,11 +73,11 @@
   <input type="range" name="ratingCourse" id="" min="1" max="10" />
   <p>10</p> -->
 </fieldset>
-<label for="ratingExplanation"
+
+<fieldset  class="radioInputFieldset">
+  <label for="ratingExplanation"
 ><h4>Hoe beoordeel je de uitleg van de lesstof?</h4>
 </label>
-<fieldset  class="radioInputFieldset">
-  
   <label>1: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="1" required></input></label>
   <label>2: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="2" required></input></label>
   <label>3: <input type="radio" name="ratingExplanation" class="ratingCourseCheckbox" value="3" required></input></label>
@@ -87,11 +91,11 @@
 
 </fieldset>
 
+<fieldset class="radioInputFieldset">
+  
 <label for="ratingUnderstanding"
 ><h4>Hoe goed begrijp je de lesstof nu?</h4></label
 >
-<fieldset class="radioInputFieldset">
-  
   <label>1: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="1" required></input></label>
   <label>2: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="2" required></input></label>
   <label>3: <input type="radio" name="ratingUnderstanding" class="ratingCourseCheckbox" value="3" required></input></label>
@@ -158,7 +162,7 @@
         hidden
       />
         
-        <button type="submit">Versturen</button>
+        <button id="submitEnqueteButton"type="submit">Versturen</button>
       </form>
     </section>
       
@@ -167,6 +171,10 @@
         </var>
       </div>
       
+<section class="offlineBannerSection"> 
+
+</section>
+
       <script src="./javascripts/main.js" type="module"></script>
     </body>
     </html>

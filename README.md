@@ -47,9 +47,9 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 **Functional Layer**
 
-- [x] Complete HTML
+- [x] Maak alle HTML compleet
 
-[ ] Add fallbacks for each browser
+[ ] Voeg 'fallbacks' toe voor elke geteste browser
 
 - [ ] Chrome
 - [ ] Firefox
@@ -60,18 +60,18 @@ Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de functi
 
 **Useable Layer**
 
-- [ ] Add CSS
-
+- [x] Voeg CSS toe.
+- [x]
 - - CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
 
 - [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
 **Pleasurable Layer**
 
-- [x] Progressively enhance enquete UI met `<input type="range">` elementen. Geef hierbij een extra element die het voor de gebruiker duidelijk maakt om het input element goed te gebruiken. Dit element laat de huidige waarde zien van het `<input type="range">` element. [Browser Support](https://caniuse.com/input-range).<br>
-      `<input type="range">` elementen zijn van nature niet user-friendly. Ik vervang de `<input type"radio">` elementen pas nadat geverifieerd is dat `javascript` aan staat. Hierdoor kan naast een `<input type="range">` ook extra user feedback worden getoond.
+- [x] Progressively enhance enquete UI met `<input type="range">` elementen. Geef hierbij een extra element die het voor de gebruiker duidelijk maakt om het input element goed te gebruiken. Dit element laat de huidige waarde zien van het `<input type="range">` element. [Browser Support](https://caniuse.com/input-range).
+      `<input type="range">` elementen zijn van nature niet user-friendly. Ik vervang de `<input type"radio">` elementen pas nadat het zeker is dat `javascript` aan staat. Hierdoor kan naast een `<input type="range">` ook extra user feedback worden getoond.
 
-- [ ] Vervang `<input type"date">` door:
+- [x] Vervang `<input type"date">` door:
 
 `<input type="number" name="dd">`
 
@@ -82,6 +82,18 @@ Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de functi
 _"De UK Government Digital Services raad het gebruik van `<input type="date">` niet aan vanwege problemen die zij ondervonden bij hun gebruikerstest"_(1)
 
 - [x] Progress Bar [Browser Support](https://caniuse.com/?search=onScroll)
+
+# Testing Browsers
+
+### Tab Accessability
+
+De volgende afbeeldingen zijn gemaakt met de [Chromelens Chrome Extension](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd)
+
+Tab path bij uitgeschakelde CSS op de index pagina.
+![Tab path bij uitgeschakelde CSS](./assets/noStylesTabIndex.png)
+
+Tab Path bij volledige enhancement op enquete pagina
+![Tab path bij volledige enhancement](./assets/enhancedTabEnquete.png)
 
 # Referenties
 

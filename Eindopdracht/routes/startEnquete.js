@@ -10,17 +10,16 @@ data = JSON.parse(data);
 router.post("/", function (req, res, next) {
   let bool = false;
   let dateString = "";
-  console.log(req.body.dateOfBirth.length);
-  if (req.body.dateOfBirth.length !== 10) {
+
+  if (req.body.yyyy) {
     dateString = req.body.yyyy + "-" + req.body.mm + "-" + req.body.dd;
   } else {
     dateString = req.body.dateOfBirth;
   }
+
   console.log(req.body);
   console.log(`dateString: ${dateString}`);
   data.forEach((storedUser) => {
-    console.log(`Date: ${req.body.dateOfBirth}`);
-    console.log(`StoredUser: ${storedUser.dateOfBirth}`);
     if (
       storedUser.dateOfBirth === dateString &&
       storedUser.studentNumber === req.body.studentNumber &&

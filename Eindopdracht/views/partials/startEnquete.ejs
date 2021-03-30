@@ -2,22 +2,35 @@
   <h2>Vul de onderstaande velden in en druk op verzenden</h2>
   <form action="/startEnquete" method="POST" autocomplete="on">
     <fieldset>
-      <label for="firstName">Voornaam</label>
-      <input type="text" name="firstName" id="firstName" />
+      <label for="firstName"
+        >Voornaam
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Bijvoorbeeld: Stan"
+      /></label>
     </fieldset>
 
     <fieldset>
-      <label for="lastName">Achternaam</label>
-      <input type="text" name="lastName" id="lastName" />
+      <label for="lastName"
+        >Achternaam
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Bijvoorbeeld: Ooms"
+      /></label>
     </fieldset>
     <fieldset>
-      <label for="studentNumber">Studentnummer</label>
-      <input
-        type="text"
-        minlength="9"
-        name="studentNumber"
-        id="studentNumber"
-      />
+      <label for="studentNumber"
+        >Studentnummer<input
+          type="text"
+          minlength="9"
+          name="studentNumber"
+          id="studentNumber"
+          placeholder="Bijvoorbeeld: 500744003"
+      /></label>
     </fieldset>
     <fieldset id="dateFieldset">
       <label for="dateOfBirth">Geboortedatum</label>
