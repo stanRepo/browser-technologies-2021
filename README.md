@@ -13,7 +13,7 @@ De enquete gaat over de minor Web Development van de Hogeschool van Amsterdam.
 
 ## Progressive Enhancement
 
-Wat zijn de core principes van progressive enhancement?
+Wat zijn de core principes van progressive enhancement? (3)
 
 - Basis _functionaliteit_ moet beschikbaar zijn voor _alle web browsers_
 - Alle content zit in _semantische HTML_
@@ -181,3 +181,5 @@ Ook wanneer CSS en JS uitgeschakeld zijn blijft de pagina volledig tab-baar. De 
 1. Making input type=date complicated. Peter-Paul Koch. Medium. 17-01-2017. https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a
 
 2. 3 Layers of Progressive Enhancement. Luna May. Medium. 04-07-2019. https://medium.com/@lunamayjohansson/3-layers-of-progressive-enhancement-84ec77424694
+
+3. What is Progressive Enhancement, and why it matters. Praveen Dubey. Freecodecamp. 26-11-2018. https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/
