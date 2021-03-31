@@ -11,7 +11,15 @@ De enquete gaat over de minor Web Development van de Hogeschool van Amsterdam.
 
 **Core Functionaliteit**: _"Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven."_
 
-## Samenvatting
+## Progressive Enhancement
+
+Wat zijn de core principes van progressive enhancement?
+
+- Basis _functionaliteit_ moet beschikbaar zijn voor _alle web browsers_
+- Alle content zit in _semantische HTML_
+- Een _Enhanced layout_ is beschikbaar via extern gelinkte _CSS_.
+- _Enhanced gedrag_ is beschikbaar via een onopvallende, extern gelinkt _Javascript_
+- De _voorkeursinstellingen_ van de browsers van eindgebruikers worden _gerespecteerd_.
 
 ### De opdracht is gemaakt met de volgende technieken:
 
