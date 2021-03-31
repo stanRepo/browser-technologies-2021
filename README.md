@@ -87,6 +87,8 @@ _"De UK Government Digital Services raad het gebruik van `<input type="date">` n
 
 Tijdens het testen ontdekte ik dat `<input type="week">` niet ondersteunt wordt door Firefox browsers. Daarom heb ik dit aangepast naar de volgende stuctuur: `<select><option></select>`.
 
+!! 30-03-2021: Op dit moment heb ik deze feature uitgeschakeld wegens een slecht native `<input type="date">` element op Safari.
+
 ## HTML Validator
 
 Ik heb gebruik gemaakt van de [HTML validation tool](https://validator.w3.org/). De volgende 3 paginas zijn hiermee gecontroleerd en vervolgens geoptimaliseerd totdat de semantiek volgens deze tool optimaal was:

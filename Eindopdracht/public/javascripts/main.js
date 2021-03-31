@@ -24,7 +24,7 @@ const activateFeatures = {
     }
   },
   replaceInputDate: () => {
-    if (window.screen.width >= 480) {
+    if (window.screen.width >= 380) {
       replaceInputDateFeature();
     }
   },
@@ -34,4 +34,4 @@ activateFeatures.rangeElements();
 activateFeatures.progressBar();
 activateFeatures.localStorage();
 activateFeatures.onlineStatus();
-activateFeatures.replaceInputDate();
+// activateFeatures.replaceInputDate(); // currently OFF, safari does not include a proper Native Elements
