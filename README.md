@@ -40,7 +40,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 # Browsers
 
-#### De applicatie wordt getest in de volgende Browsers:
+#### De applicatie is getest in de volgende Browsers:
 
 - Chrome, Desktop + Mobiel **Versie 89.0.4389.82 (Officiële build) (64-bits)**
 - Firefox, Desktop **Versie 86.0.1 (64-bit)**
@@ -54,6 +54,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 ![Interaction Diagram](./assets/flow.png)
 
 </details>
+
 # Wireflow
 
 #### Wireflow Progressive Enhanced Index Page
