@@ -50,18 +50,19 @@ De verificatie van een user vindt plaats in de volgende stappen:
 - [x] Maak alle HTML compleet
 - [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
-[ ] Voeg 'fallbacks' toe voor elke geteste browser
+[x] Voeg 'fallbacks' toe voor elke geteste browser
 
-- [ ] Chrome
-- [ ] Firefox
-- [ ] Safari
-- [ ] Samsung Internet
+- [x] Chrome
+- [x] Firefox
+- [x] Safari
+- [x] Samsung Internet
 
-Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de functional layer. Hierbij is dus GEEN CSS en JS toegepast.
+Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de _functional_ layer. Hierbij is dus GEEN CSS en JS toegepast.
 
 **Useable Layer**
 
 - [x] Voeg CSS toe.
+- [x] Landscape Modus
 - [x] :focus. Focus pseudoclass is gebruikt om inputvelden duidelijker en herkenbaarder te maken.
 - - CSS Flexible Box Layout Module [Browser Support](https://caniuse.com/flexbox)
 

@@ -5,7 +5,7 @@
     <section>
       <%- include('../partials/title.ejs') %>
     
-      <h1><%= obj.firstName%></h1>
+      <h1> Hallo <%= obj.firstName%></h1>
       
       <form action="/sendEnquete" method="POST" autocomplete="on" id="enquete">
       
@@ -20,26 +20,23 @@
             <option value="Real Time Web">Real Time Web</option>
             <option value="Web Design">Web Design</option>
           </select></label>
-          
-      
         </fieldset>
           
         <fieldset>
           <label for="when"> Wanneer begon je met dit vak?
-            <input
-          type="week"
-          name="when"
-          min="2021-W04"
-          max="2021-W40"
-          id="when"
-          required
-          /></label>
-          
+            <select name="when" id="when" required>
+              <option value="" disable selected >Kies een periode</option>
+              <option value="Week 1-4">Week 1-4</option>
+              <option value="Week 5-9">Week 5-9</option>
+              <option value="Week 10-14">Week 10-14</option>
+              <option value="Week 15-19">Week 15-19</option>
+            </select>
+        </label>
         </fieldset>
         
         <fieldset>
           <label for="profs"> Bij welke docent werd je ingedeeld?
-            <select name="profs" id="profs">
+            <select name="profs" id="profs" required>
             <option value="" disabled selected>Kies een docent</option>
             <option value="Joost">Joost</option>
             <option value="Declan">Declan</option>
