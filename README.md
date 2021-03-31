@@ -95,7 +95,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 ## CheckList
 
-- [x] Voeg 'fallbacks' toe voor elke geteste browser.
+- [x] Test elke browser en maak aanpassingen indien nodig.
 
 - [x] Chrome
 - [x] Firefox
