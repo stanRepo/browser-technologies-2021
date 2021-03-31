@@ -50,7 +50,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 - [x] Maak alle HTML compleet
 - [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
-[x] Voeg 'fallbacks' toe voor elke geteste browser
+- [x] Voeg 'fallbacks' toe voor elke geteste browser
 
 - [x] Chrome
 - [x] Firefox
