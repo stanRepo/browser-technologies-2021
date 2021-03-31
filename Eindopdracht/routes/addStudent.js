@@ -7,10 +7,10 @@ let data = fs.readFileSync(path.resolve(__dirname, "..", "database.json"));
 data = JSON.parse(data);
 
 router.post("/", function (req, res, next) {
-  // assemble obj
   const obj = req.body;
   const userExists = false;
   obj.enquetes = [];
+  // first check if user exists
   data.forEach((storedUser) => {
     if (
       storedUser.firstName === obj.firstName &&
@@ -23,16 +23,11 @@ router.post("/", function (req, res, next) {
     }
   });
   if (!userExists) {
-    console.log(data.keys());
-    console.log(obj);
-    const newData = data;
-
-    data = Array.from(data.push(obj));
-    console.log(data);
-    // const save = fs.writeFileSync(
-    //   path.resolve(__dirname, "..", "database.json"),
-    //   JSON.stringify(data)
-    // ); // save data to database.json
+    // assemble obj
+    const save = fs.writeFileSync(
+      path.resolve(__dirname, "..", "database.json"),
+      JSON.stringify(data)
+    ); // save data to database.json
     res.render("./pages/studentAdded", { obj: req.body });
   }
 });
