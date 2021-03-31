@@ -27,7 +27,7 @@ function timeLoop(bool) {
 
   setInterval(() => {
     fetchAndShowBanner();
-  }, 3000);
+  }, 2000);
 }
 
 function fetchAndShowBanner() {
