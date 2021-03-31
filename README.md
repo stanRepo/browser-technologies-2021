@@ -186,7 +186,7 @@ Ook wanneer CSS en JS uitgeschakeld zijn blijft de pagina volledig tab-baar. De 
 
 <details>
 
-![Contrast check bij volledige enhancement indexpagina](./assets/contrastEnhancedIndex.png)
+![Contrast check bij volledige enhancement indexpagina](./assets/contrastEnhancedIndex.JPG)
 
 </details>
 
@@ -194,7 +194,7 @@ Ook wanneer CSS en JS uitgeschakeld zijn blijft de pagina volledig tab-baar. De 
 
 <details>
 
-![Contrast check bij volledige enhancement enquete pagina](./assets/contrastEnhancedEnquete.png)
+![Contrast check bij volledige enhancement enquete pagina](./assets/contrastEnhancedEnquete.JPG)
 
 </details>
 
@@ -202,7 +202,7 @@ Ook wanneer CSS en JS uitgeschakeld zijn blijft de pagina volledig tab-baar. De 
 
 <details>
 
-![Contrast check bij volledige enhancement finished pagina](./assets/contrastEnhancedFinished.png)
+![Contrast check bij volledige enhancement finished pagina](./assets/contrastEnhancedFinished.JPG)
 
 </details>
 
