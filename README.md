@@ -182,6 +182,8 @@ Ook wanneer CSS en JS uitgeschakeld zijn blijft de pagina volledig tab-baar. De 
 
 ## Contrast Checker
 
+Deze website is conform WCAG 2.0 AAA. Dit is gecontroleerd met de hiervoor bestemde [Chrome Extensie](https://chrome.google.com/webstore/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf)
+
 - Contrast check bij volledige enhancement indexpagina
 
 <details>
