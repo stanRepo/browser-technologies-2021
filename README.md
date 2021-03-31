@@ -39,23 +39,61 @@ De verificatie van een user vindt plaats in de volgende stappen:
 - Safari Ipad **Versie 14.0**
 - Samsung Internet, Mobiel **Versie 13.2.3.2**
 
+# Interaction Diagram
+
+![Interaction Diagram](./assets/flow.png)
+
 # Wireflow
 
-![Wireflow](./assets/flow.png)
+#### Wireflow Progressive Enhanced Index Page
+
+<details>
+
+![Wireflow Progressive Enhanced Index Page](./assets/wireflowEnhancedIndex.png)
+
+</details>
+
+#### Wireflow Progressive Enhanced Enquete Page
+
+<details>
+
+![Wireflow Progressive Enhanced Enquete Page](./assets/wireflowEnhancedEnquete.png)
+
+</details>
+
+#### Wireflow Progressive Enhanced Finished Page Mobile
+
+- Here the _Previous enquetes_ section is not a table.
+
+<details>
+
+![Wireflow Progressive Enhanced Finished Page Mobile](./assets/wireflowEnhancedFinishedM.png)
+
+</details>
+
+#### Wireflow Progressive Enhanced Finished Page screen Tableview ( screen.width > 380px )
+
+- Here the _Previous enquetes_ section is changed to a table for clear viewing purposes.
+
+<details>
+
+![Wireflow Progressive Enhanced Finished Page Mobile Tableview](./assets/wireflowEnhancedFinished.png)
+
+</details>
 
 ## CheckList
 
-**Functional Layer**
-
-- [x] Maak alle HTML compleet
-- [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
-
-- [x] Voeg 'fallbacks' toe voor elke geteste browser
+- [x] Voeg 'fallbacks' toe voor elke geteste browser.
 
 - [x] Chrome
 - [x] Firefox
 - [x] Safari
 - [x] Samsung Internet
+
+**Functional Layer**
+
+- [x] Maak alle HTML compleet
+- [x] "save" progress using only HTML [Browser Support](https://caniuse.com/?search=autocomplete)
 
 Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de _functional_ layer. Hierbij is dus GEEN CSS en JS toegepast.
 
