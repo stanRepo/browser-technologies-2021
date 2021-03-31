@@ -21,7 +21,7 @@ Wat zijn de core principes van progressive enhancement? (3)
 - _Enhanced gedrag_ is beschikbaar via een onopvallende, extern gelinkt _Javascript_
 - De _voorkeursinstellingen_ van de browsers van eindgebruikers worden _gerespecteerd_.
 
-### De opdracht is gemaakt met de volgende technieken:
+### De opdracht is gemaakt met maar niet beperkt tot de volgende technieken:
 
 - NodeJS
 - Express
