@@ -7,6 +7,9 @@ h1 h2 h3 h4 h5 h6 span p a button:focus {
 h1 h2 h3 h4 h5 h6 {
   color: #473398;
 }
+a > h5 {
+  color: #1230c4;
+}
 
 body {
   padding: 0;
@@ -23,9 +26,9 @@ header {
   display: flex;
   padding: 10px;
 }
-header > a:visited:link {
+header > a {
   text-decoration: none;
-  color: inherit;
+  color: #1230c4;
 }
 fieldset {
   min-width: 200px;
@@ -49,8 +52,8 @@ a {
   color: #00b7ff;
 }
 .date {
-  font-size: x-small;
-  color: grey;
+  font-size: small;
+  color: black;
 }
 h3 {
   text-decoration: underline;

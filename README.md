@@ -180,6 +180,32 @@ De volgende afbeeldingen zijn gemaakt met de [Chromelens Chrome Extension](https
 
 Ook wanneer CSS en JS uitgeschakeld zijn blijft de pagina volledig tab-baar. De gebruiker is nog steeds in staat dezelfde functionaliteiten te gebruiken.
 
+## Contrast Checker
+
+- Contrast check bij volledige enhancement indexpagina
+
+<details>
+
+![Contrast check bij volledige enhancement indexpagina](./assets/contrastEnhancedIndex.png)
+
+</details>
+
+- Contrast check bij volledige enhancement enquete pagina
+
+<details>
+
+![Contrast check bij volledige enhancement enquete pagina](./assets/contrastEnhancedEnquete.png)
+
+</details>
+
+- Contrast check bij volledige enhancement finished pagina
+
+<details>
+
+![Contrast check bij volledige enhancement finished pagina](./assets/contrastEnhancedFinished.png)
+
+</details>
+
 # Referenties
 
 1. Making input type=date complicated. Peter-Paul Koch. Medium. 17-01-2017. https://medium.com/samsung-internet-dev/making-input-type-date-complicated-a544fd27c45a
