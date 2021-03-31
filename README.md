@@ -49,8 +49,11 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 # Interaction Diagram
 
+<details>
+
 ![Interaction Diagram](./assets/flow.png)
 
+</details>
 # Wireflow
 
 #### Wireflow Progressive Enhanced Index Page
