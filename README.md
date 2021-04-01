@@ -2,7 +2,25 @@
 
 [Live Demo](https://BT2021.herokuapp.com)
 
-# Inhoudsopgave
+De demo kan gebruikt worden door op de bovenstaande link te klikken, de volgende gegevens in te vullen en op verzenden te klikken:
+
+Voornaam: Stan
+
+Achternaam: Ooms
+
+Studentnummer: 500744003
+
+Geboortedatum 23-06-1996
+
+# Feature detection
+
+Feature detection is het controleren of een bepaalde feature op het toestel van de gebruiker ondersteund wordt alvorens er op gehandeld wordt. Hierdoor is het mogelijk om op een efficiente manier progressive enhancement toe te passen.
+
+Ik maak gebruik van feature detection in de directory: `public/javascripts/main.js`
+
+Dit is te zien aan het volgende code block:
+
+` if ("localStorage" in window) { localStorageFeature(); }`
 
 ## Use Case
 
@@ -75,7 +93,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 #### Wireflow Progressive Enhanced Finished Page Mobile
 
-- Here the _Previous enquetes_ section is not a table.
+- Hier is de _Previous enquetes_ sectie geen tabel. Ik heb hiervoor gekozen omdat de tabel in dit geval op mobiel geen goed leesbare layout bood.
 
 <details>
 
@@ -85,7 +103,7 @@ De verificatie van een user vindt plaats in de volgende stappen:
 
 #### Wireflow Progressive Enhanced Finished Page screen Tableview ( screen.width > 380px )
 
-- Here the _Previous enquetes_ section is changed to a table for clear viewing purposes.
+- Hier heb ik de _previous enquetes_ sectie op grotere schermen gewijzigd naar een tabel zodat het duidelijker uit te vouwen en te lezen is.
 
 <details>
 
@@ -118,26 +136,33 @@ Doordat Server side rendering plaatsvind is de site te gebruiken vanaf de _funct
 
 **Pleasurable Layer**
 
-- [x] Progressively enhance enquete UI met `<input type="range">` elementen. Geef hierbij een extra element die het voor de gebruiker duidelijk maakt om het input element goed te gebruiken. Dit element laat de huidige waarde zien van het `<input type="range">` element. [Browser Support](https://caniuse.com/input-range).
+- [x] Progressively enhance enquete UI met `<input type="range">` elementen. Geef hierbij een extra element die het voor de gebruiker duidelijk maakt om het input element goed te gebruiken. Dit element laat de huidige waarde zien van het `<input type="range">` element.
       `<input type="range">` elementen zijn van nature niet user-friendly. Ik vervang de `<input type"radio">` elementen pas nadat het zeker is dat `javascript` aan staat. Hierdoor kan naast een `<input type="range">` ook extra user feedback worden getoond.
 
 - [x] Vervang `<input type"date">` door:
 
 `<input type="number" name="dd">`
-
 `<input type="number" name="mm">`
-
 `<input type="number" name="yyyy">`
 
 _"De UK Government Digital Services raad het gebruik van `<input type="date">` niet aan vanwege problemen die zij ondervonden bij hun gebruikerstest"_(1)
 
+[Browser Support](https://caniuse.com/input-range).
+
 - [x] Progress Bar [Browser Support](https://caniuse.com/?search=onScroll)
 
-# Testing
+# Browser tests
 
-Tijdens het testen ontdekte ik dat `<input type="week">` niet ondersteunt wordt door Firefox browsers. Daarom heb ik dit aangepast naar de volgende stuctuur: `<select><option></select>`.
+- Tijdens het testen ontdekte ik dat `<input type="week">` niet ondersteunt wordt door Firefox browsers. Daarom heb ik dit aangepast naar de volgende stuctuur: `<select><option></select>`.
 
-!! 30-03-2021: Op dit moment heb ik deze feature uitgeschakeld wegens een slecht native `<input type="date">` element op Safari.
+- Tijdens het testen op Safari ontdekte ik dat het native element `<input type="date">` niet geschikt is om een geboortedatum mee in te vullen. Daarom heb ik gekozen om 3 alternatieve velden te gebruiken.
+
+Tijdens het testen heb ik verschillende tools gebruikt om mij te ondersteunen in het vinden van fouten m.b.t. contrast, leesbaarheid, toetsenbord-vriendelijkheid en HTML semantiek.
+Regelmatig moest ik aanpassingen doen om dit te optimaliseren. Ik heb ervoor gezorgd dat mijn website en de paginas die betrekking hebben op de core-functionaliteit voldoen aan de eisen die deze onderwerpen stellen.
+
+Hier ga ik in de onderdelen hieronder verder op in met afbeeldingen van de scores.
+
+---
 
 ## HTML Validator
 
@@ -146,6 +171,8 @@ Ik heb gebruik gemaakt van de [HTML validation tool](https://validator.w3.org/).
 - "/" (indexpagina)
 - "/startEnquete" (daadwerkelijke enquete)
 - "/sendEnquete" (Enquete verzonden. Overzichtspagina reeds verzonden enquetes)
+
+Ter validatie hiervan kunt u de HTML copy + pasten in de Tool hierboven beschreven.
 
 ---
 
